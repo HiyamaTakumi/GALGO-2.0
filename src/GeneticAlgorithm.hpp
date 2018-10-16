@@ -58,6 +58,10 @@ public:
    // constructor
    template <int...N>
    GeneticAlgorithm(Func<T> objective, int popsize, int nbgen, bool output, const Parameter<T,N>&...args);
+ 
+   GeneticAlgorithm(){};
+
+	
    // run genetic algorithm
    void run();
    // return best chromosome 
